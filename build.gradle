@@ -31,10 +31,12 @@ subprojects {
     apply plugin: 'io.spring.dependency-management'
 
     dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
         annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
         implementation 'org.springframework.boot:spring-boot-configuration-processor'
         implementation 'org.apache.commons:commons-lang3:3.12.0'
-        testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
         implementation 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
