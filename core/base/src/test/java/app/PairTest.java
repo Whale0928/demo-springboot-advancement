@@ -13,5 +13,8 @@ class PairTest {
     Pair<String, Integer> pair = new Pair<>("hello", 123);
     assertEquals("hello", pair.first());
     assertEquals(123, pair.second());
+
+    kotlin.Pair<String, Integer> kotlinPair = new kotlin.Pair<>("hello", 123);
+    assertEquals("hello", kotlinPair.getFirst());
   }
 }
