@@ -8,6 +8,10 @@ dependencies {
 
     //코틀린 의존성 추가
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+    // poi
+    implementation 'org.apache.poi:poi:5.4.0'
+    implementation 'org.apache.poi:poi-ooxml:5.4.0'
 }
 
 tasks.register("prepareKotlinBuildScriptModel") {}
